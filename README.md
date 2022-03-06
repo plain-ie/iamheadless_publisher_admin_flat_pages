@@ -1,6 +1,6 @@
 # iamheadless_publisher_admin_flat_pages
 
-App to render redirects item type in `iamheadless_publisher_admin` frontend.
+App to render flat-page item type in `iamheadless_publisher_admin` frontend.
 
 ## Installation
 
