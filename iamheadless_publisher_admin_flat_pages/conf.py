@@ -1,9 +1,11 @@
-from .apps import IamheadlessPublisherAdminFlatPagesConfig
+from django.conf import settings as dj_settings
+
+from .apps import IamheadlessPublisherAdminFlatPagesConfig as AppConfig
 
 
 class Settings:
 
-    APP_NAME = IamheadlessPublisherAdminFlatPagesConfig.name
+    APP_NAME = AppConfig.name
     ITEM_TYPE = 'flat_page'
 
     def __getattr__(self, name):
