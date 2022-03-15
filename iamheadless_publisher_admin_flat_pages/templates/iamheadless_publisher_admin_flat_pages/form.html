@@ -24,5 +24,7 @@
 
 <script src="{% static 'iamheadless_readability/js/app.js' %}"></script>
 <script>
-    
+    window.addEventListener('DOMContentLoaded', function() {
+        new DetectReadableFormFields('[readability=true]');
+    }, false);
 </script>
