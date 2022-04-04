@@ -63,6 +63,16 @@ class FlatPagePydanticModel(BaseItemPydanticModel):
             }
         )
 
+    #
+
+    @classmethod
+    def viewsets(cls):
+        return [
+            f'{settings.APP_NAME}.viewsets.FlatPageCreateViewSet',
+            f'{settings.APP_NAME}.viewsets.FlatPageDeleteViewSet',
+            f'{settings.APP_NAME}.viewsets.FlatPageRetrieveUpdateViewSet',
+        ]
+
     @classmethod
     def get_item_type(cls, data):
         return data['item_type']
